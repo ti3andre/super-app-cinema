@@ -1,0 +1,75 @@
+{
+  "info": {
+    "_postman_id": "c300226a-7789-48e3-8800-7c8dc8922b3d",
+    "name": "[THEMOVIEDATABASE] API CINEMA",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "4336660",
+    "_collection_link": "https://looups.postman.co/workspace/Team-Workspace~0f794a53-1d96-4021-8fd0-a58d5c113b65/collection/4336660-c300226a-7789-48e3-8800-7c8dc8922b3d?action=share&creator=4336660&source=collection_link"
+  },
+  "item": [
+    {
+      "name": "SHOW MOVIES",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.themoviedb.org/3/movie/popular?language=pt-BR&region=BR&api_key=1c3e85d1944269d059aaa9889984c577",
+          "protocol": "https",
+          "host": ["api", "themoviedb", "org"],
+          "path": ["3", "movie", "popular"],
+          "query": [
+            {
+              "key": "language",
+              "value": "pt-BR"
+            },
+            {
+              "key": "region",
+              "value": "BR"
+            },
+            {
+              "key": "api_key",
+              "value": "1c3e85d1944269d059aaa9889984c577"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "SEARCH MOVIE",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.themoviedb.org/3/movie/603692?&append_to_response=videos&language=pt-BR&region=BR&api_key=1c3e85d1944269d059aaa9889984c577",
+          "protocol": "https",
+          "host": ["api", "themoviedb", "org"],
+          "path": ["3", "movie", "603692"],
+          "query": [
+            {
+              "key": null,
+              "value": null
+            },
+            {
+              "key": "append_to_response",
+              "value": "videos"
+            },
+            {
+              "key": "language",
+              "value": "pt-BR"
+            },
+            {
+              "key": "region",
+              "value": "BR"
+            },
+            {
+              "key": "api_key",
+              "value": "1c3e85d1944269d059aaa9889984c577"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
